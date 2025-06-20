@@ -32,6 +32,10 @@
         </tr>
     </table>
     
+    <footer class="py-4 mt-10 text-sm text-center text-gray-600 border-t">
+  &copy; <span id="year"></span> Md Rafi. All rights reserved.
+</footer>
+    
     <script>
         startingAlert=()=>{
            Swal.fire({
@@ -42,6 +46,7 @@
   timer: 2000
 });
         }
+         document.getElementById('year').textContent = new Date().getFullYear();
     </script>
 
 </body>
